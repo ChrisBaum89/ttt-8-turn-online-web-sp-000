@@ -25,9 +25,10 @@ def turn(board)
   until accept_turn == 1
     puts "Please enter 1-9:"
     user_input = gets.strip
-    if valid_move?(board, input_to_index(user_input)) == true
+    converted_input = input_to_index(user_input)
+    if valid_move?(board, converted_input) == true
       accept_move = 1
     end
   end
-  move(board, user_input, value = "X")
+  move(board, converted_input, value = "X")
 end
