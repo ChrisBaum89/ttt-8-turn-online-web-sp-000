@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Please enter 1-9:"
