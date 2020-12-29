@@ -21,7 +21,7 @@ def move(board, index, value)
 end
 
 def turn(board)
-  until alid_move?(board, input_to_index(user_input))
+  until valid_move?(board, input_to_index(user_input))
   puts "Please enter 1-9:"
   user_input = gets.strip
   end
