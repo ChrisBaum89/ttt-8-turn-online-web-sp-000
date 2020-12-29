@@ -31,4 +31,5 @@ def turn(board)
     end
   end
   move(board, converted_input, value = "X")
+  display_board(board)
 end
