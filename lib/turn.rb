@@ -30,5 +30,4 @@ def turn(board)
       accept_move = 1
     end
   end
-  move(board, converted_input, value = "X")
 end
