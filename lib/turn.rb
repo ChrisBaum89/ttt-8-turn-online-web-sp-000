@@ -28,4 +28,5 @@ def turn(board)
     if valid_move?(board, input_to_index(user_input)) == true
       accept_turn = 1
     end
+  end
 end
