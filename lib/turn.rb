@@ -21,12 +21,12 @@ def move(board, index, value)
 end
 
 def turn(board)
-  accept_move = 0
-  until accept_move == 1
+  accept_move = 0 #this is used to continue to ask for moves until move is accepted in the UNTIL loop
+  until accept_move == 1  #continues to ask for a valid move until a valid move is recieved
     puts "Please enter 1-9:"
     user_input = gets.strip
-    converted_input = input_to_index(user_input)
-    if valid_move?(board, converted_input) == true
+    converted_input = input_to_index(user_input) #converts input into an integer
+    if valid_move?(board, converted_input) == true #if a valid move is received then we change variable accept_move to exit our UNTIL loop
       accept_move = 1
     end
   end
